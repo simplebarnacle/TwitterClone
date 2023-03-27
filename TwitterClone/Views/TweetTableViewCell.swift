@@ -63,7 +63,7 @@ class TweetTableViewCell: UITableViewCell {
     private let replyButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(UIImage(systemName: "bubble.left"), for: .normal)
+        button.setImage(UIImage(named: "result"), for: .normal)
         button.tintColor = .systemRed
         return button
     }()
@@ -71,7 +71,7 @@ class TweetTableViewCell: UITableViewCell {
     private let reTweetButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
+        button.setImage(UIImage(named: "result (1)"), for: .normal)
         button.tintColor = .systemOrange
         return button
     }()
@@ -79,7 +79,7 @@ class TweetTableViewCell: UITableViewCell {
     private let likeButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(UIImage(systemName: "heart"), for: .normal)
+        button.setImage(UIImage(named: "heart"), for: .normal)
         button.tintColor = .systemYellow
         return button
     }()
@@ -87,7 +87,7 @@ class TweetTableViewCell: UITableViewCell {
     private let shareButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
+        button.setImage(UIImage(named: "result (3)"), for: .normal)
         button.tintColor = .systemGreen
         return button
     }()
@@ -155,7 +155,7 @@ class TweetTableViewCell: UITableViewCell {
             tweetTextContentLabel.leadingAnchor.constraint(equalTo: displayNameLabel.leadingAnchor),
             tweetTextContentLabel.topAnchor.constraint(equalTo: displayNameLabel.bottomAnchor, constant: 10),
             tweetTextContentLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15)
-//            tweetTextContentLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
+            //            tweetTextContentLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
         ]
         
         let replyButtonConstraints = [
@@ -192,8 +192,5 @@ class TweetTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    
     
 }
